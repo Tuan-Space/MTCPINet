@@ -1,0 +1,9 @@
+## MTCPINet: A Unified Multi-Task Deep Learning Framework for Prediction of Compound-Protein Interaction in Drug Discovery
+
+
+<div align="center">
+  <img src="https://github.com/Tuan-Space/MTCPINet/blob/main/Graphic_abstract.png">
+</div>  
+
+
+The accurate prediction of molecular interactions and binding affinities between compounds and their target proteins are a pivotal focus in the field of drug discovery. Traditional single-task models for predicting such compound-protein interaction (CPI) require chaining multiple specialized models to perform compound screening, which can lead to error accumulation and inefficiencies. In this study, we propose a novel **multi-task deep learning framework MTCPINet**, which integrates classification and regression tasks into a unified model, enabling simultaneous prediction of compound-protein interaction activity and the corresponding binding affinity. To address data heterogeneity between different tasks, this study employs a newly curated high-quality dataset of compound-protein pairs sourced from ChEMBL, paired with a **“cold-start for compounds”** data preparation strategy. In MTCPINet, the network architecture synergistically combines **Graph Isomorphism Network Convolution (GINConv)**, **Convolutional Neural Networks (CNN)**, a **one-dimensional Convolutional Block Attention Module (1D CBAM)**, and **residual modules**. And a **masking mechanism** is incorporated during training to ensure that regression loss is applied exclusively to active compound-target pairs. This design streamlines the drug discovery process through the precise identification of high-quality effective target proteins. Leveraging robust data reutilization strategies, our MTCPINet not only demonstrates potential for **drug repositioning**, but also facilitates the **prediction of target proteins for natural products from traditional Chinese medicine (TCM)**.
